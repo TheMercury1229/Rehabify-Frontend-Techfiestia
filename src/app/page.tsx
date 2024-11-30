@@ -1,10 +1,20 @@
-import { Button } from "@/components/ui/button";
+"use client";
+import Hero from "@/components/LandingPage/Hero";
+import FeatureSection from "@/components/LandingPage/FeatureSection";
+import CTA from "@/components/LandingPage/CTA";
+import Footer from "@/components/LandingPage/Footer";
 
-export default function Home() {
+export default function Root() {
   return (
-    <div className="text-3xl">
-      Home
-      <Button className="text-black">Just a button</Button>
-    </div>
+    <>
+      {/* Hero section with bg-color */}
+      <Hero />
+      {/* Feature Cards */}
+      <FeatureSection />
+      {/* CTA */}
+      <CTA />
+      {/* Footer */}
+      <Footer/>
+    </>
   );
 }
