@@ -24,19 +24,11 @@ const FeatureCard = ({ heading, content,imageUrl ,index }: FeatureCardProps) => 
         <h4 className="text-3xl text-primary font-semibold">{heading}</h4>
         <p className="text-lg text-muted-foreground">{content}</p>
       </div>
-      <div className="flex z-[-1] items-center justify-center">
-        <Image src={imageUrl} alt="image" width={250} height={250} />
-      </div>
-
-      {/* Gradient bg */}
-      <div className="absolute z-[-1] selection:none -bottom-10 left-10">
-        <Image
-          src="/bg.svg"
-          alt="bg-gradient"
-          aria-hidden="true"
-          width={350}
-          height={350}
-        />
+      <div className="flex -z-1 items-center justify-center py-3">
+        <div className="absolute rounded-full -z-10 h-auto w-auto bg-teal-400 blur-lg opacity-10 p-10">
+          <Image src={imageUrl} alt="image" className="opacity-0" width={250} height={250} />
+        </div>
+        <Image src={imageUrl}  alt="image" width={250} height={250} />
       </div>
     </motion.div>
   );
