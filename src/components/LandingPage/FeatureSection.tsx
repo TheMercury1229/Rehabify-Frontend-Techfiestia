@@ -38,7 +38,7 @@ const FeatureSection = () => {
   return (
     <div className="px-[5%] w-[100%] mx-auto py-8 overflow-hidden">
       {/* Heading */}
-      <h2 className="text-5xl font-bold text-center text-primary mb-3">
+      <h2 className="text-6xl font-bold text-center text-primary mb-3">
         How it Works!
       </h2>
       <div className="grid gap-5 grid-cols-1 mt-5">
