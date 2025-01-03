@@ -12,7 +12,7 @@ import Link from "next/link";
 
 export const Sidebar = () => {
   return (
-    <section className="flex flex-col w-1/6 px-8 py-6 bg-primary h-screen">
+    <section className="flex flex-col w-1/6 px-8 py-6 bg-primary h-screen sticky top-0 left-0 z-50">
       <div className="flex justify-center items-center ">
         <Image src="/logo.png" alt="logo" width={130} height={130} />
       </div>
